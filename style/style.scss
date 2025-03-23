@@ -132,3 +132,42 @@ nav {
     padding-left: 30%;
   }
 }
+.witharrow {
+  background-color: black;
+  height: 40vh;
+
+  img {
+    padding: 20px;
+    margin-left: 320px;
+  }
+
+  .steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $text-color;
+    font-size: 20px;
+  }
+
+  .step {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+  }
+}
+.destination1 {
+  background-image: url("../image/third_image.png");
+  height: 80vh;
+  .info1 {
+    background-image: url("../image/Rectangle415.png");
+  }
+}
+.destination2 {
+  background-image: url("../image/fourth_image.png");
+  height: 80vh;
+  .info
+  {
+    background-image: url("../image/Rectangle415.png");
+  }
+}
