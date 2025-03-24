@@ -158,16 +158,173 @@ nav {
 }
 .destination1 {
   background-image: url("../image/third_image.png");
-  height: 80vh;
+  height: 60vh;
+  display: block;
+  padding-top: 15%;
+  padding-left: 30%;
+
   .info1 {
+    position: absolute;
+    justify-items: center;
     background-image: url("../image/Rectangle415.png");
+    letter-spacing: 1.6px;
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+    color: $text-color;
+  }
+  button {
+    background: $primary-color;
+    color: $text-color;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
   }
 }
 .destination2 {
   background-image: url("../image/fourth_image.png");
-  height: 80vh;
-  .info
-  {
+  height: 40vh;
+  padding-top: 20%;
+  padding-left: 50%;
+
+  .info {
+    position: absolute;
+    justify-items: center;
     background-image: url("../image/Rectangle415.png");
+    letter-spacing: 1.6px;
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+    color: $text-color;
+  }
+  button {
+    background: $primary-color;
+    color: $text-color;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}
+.testimonial {
+  background-image: url("../image/fifth_image.png");
+  height: 80vh;
+  padding: 50px 20px;
+  text-align: center;
+  color: $text-color;
+  letter-spacing: 1.6px;
+
+  h2 {
+    font-size: 28px;
+    align-items: center;
+  }
+
+  .lasttotal {
+    display: flex;
+    gap: 10px;
+    padding: 90px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .lasttext {
+    background-image: url("../image/Rectangle415.png");
+    justify-content: space-evenly;
+  }
+}
+footer {
+  background-color: $secondary-color;
+  padding: 20px;
+  text-align: center;
+  color: $text-color;
+  letter-spacing: 1.6px;
+  .social-links {
+    a {
+      color: $text-color;
+      margin: 0 10px;
+      font-size: 20px;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .search-box input {
+    width: 250px;
+  }
+
+  .steps {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destinations {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destinations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .testimonial img {
+    width: 60px;
+    height: 60px;
   }
 }

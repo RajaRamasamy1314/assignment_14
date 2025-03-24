@@ -168,16 +168,180 @@ nav a:hover {
 
 .destination1 {
   background-image: url("../image/third_image.png");
-  height: 80vh;
+  height: 60vh;
+  display: block;
+  padding-top: 15%;
+  padding-left: 30%;
 }
 .destination1 .info1 {
+  position: absolute;
+  justify-items: center;
   background-image: url("../image/Rectangle415.png");
+  letter-spacing: 1.6px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 30%;
+  height: 30%;
+  color: #fff;
+}
+.destination1 button {
+  background: #3b3b98;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.destination1 button:hover {
+  background: #2d2d73;
 }
 
 .destination2 {
   background-image: url("../image/fourth_image.png");
-  height: 80vh;
+  height: 40vh;
+  padding-top: 20%;
+  padding-left: 50%;
 }
 .destination2 .info {
+  position: absolute;
+  justify-items: center;
   background-image: url("../image/Rectangle415.png");
+  letter-spacing: 1.6px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 30%;
+  height: 30%;
+  color: #fff;
+}
+.destination2 button {
+  background: #3b3b98;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.destination2 button:hover {
+  background: #2d2d73;
+}
+
+.testimonial {
+  background-image: url("../image/fifth_image.png");
+  height: 80vh;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1.6px;
+}
+.testimonial h2 {
+  font-size: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial .lasttotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 90px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.testimonial .lasttext {
+  background-image: url("../image/Rectangle415.png");
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1.6px;
+}
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+footer .social-links a:hover {
+  color: #3b3b98;
+}
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+  .search-box input {
+    width: 250px;
+  }
+  .steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .destinations {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .search-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .destinations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonial {
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 10px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .search-box input {
+    width: 100%;
+  }
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+  }
 }
